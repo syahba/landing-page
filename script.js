@@ -5,6 +5,7 @@ btnSubmit.addEventListener('click', (event) => {
     submit()
 });
 
+// get form inputs
 function handleGetFormData() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -16,11 +17,13 @@ function handleGetFormData() {
     return data;
 };
 
+// validate zipcode number
 function isNumber(data) {
     const validate = isNaN(data) ? false : true;
     return validate;
 };
 
+// validate checkbox
 function checkboxIsChecked() {
     const status = document.getElementById('status').checked;
     if (status === true) {
@@ -28,12 +31,14 @@ function checkboxIsChecked() {
     } else { return false; }
 }
 
+// validate form
 function validateFormData(form) {
     if (form && isNumber(form.zipCode) && checkboxIsChecked()) {
         return true;
     } else { return false }
 }
 
+// form submission
 function submit() {
     const warning = document.getElementById('warning');
     const obj = handleGetFormData();
