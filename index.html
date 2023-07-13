@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Trekt.</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="#">
+                <h1 id="logo">Trekt.</h1>
+            </a>
+
+            <div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#about">About Us</a></li>
+                    <li class="nav-item"><a href="#contact">Contact Us</a></li>
+                    <li class="nav-item"><a id="link" href="https://skilvul.com">Get Started</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="home" id="home">
+            <div class="heading">
+                <h1>Your roadmap to product management</h1>
+                <p>Trekt ist a product education platform. Trekt aims to empower individuals to become Product Managers.
+                </p>
+            </div>
+            <img id="banner"
+                src="https://img.freepik.com/free-vector/international-cooperation-concept-illustration_114360-6002.jpg?w=740&t=st=1687773316~exp=1687773916~hmac=7cd4c4511a5004580f7dae07eb9bfcea030f3cf1708b953d93815a49b71198df"
+                alt="people-vector">
+        </div>
+
+        <div id="about">
+            <p id="subheading">WHAT WE DO</p>
+            <h1>Our Offer</h1>
+            <p id="description">Our goal is to educate young professionals on the product management industry while also
+                providing users a way to practice their skills.</p>
+            <div class="card-container">
+                <div class="card-item" id="first-card">
+                    <img src="https://img.freepik.com/free-vector/webinar-concept-illustration_114360-4764.jpg?w=900&t=st=1687794173~exp=1687794773~hmac=5f3859a42a6242115aef6f519fe4b8e7fd944cc049f0c2c024361a2b0ed5f9dc"
+                        alt="graphic-icon">
+                    <h3>Learn</h3>
+                    <p>Learn the ins and outs of product management.</p>
+                </div>
+                <div class="card-item" id="second-card">
+                    <img src="https://img.freepik.com/free-vector/lesson-concept-illustration_114360-7907.jpg?w=900&t=st=1687794136~exp=1687794736~hmac=699fc497bb0f601ff873c55576736e918679f737b661ec86ac985fa1d988a681"
+                        alt="note-icon">
+                    <h3>Pratice</h3>
+                    <p>We provide product management exercises so you can sharpen your skills.</p>
+                </div>
+                <div class="card-item" id="third-card">
+                    <img src="https://img.freepik.com/free-vector/tech-company-concept-illustration_114360-9779.jpg?w=900&t=st=1687794222~exp=1687794822~hmac=a9f22906762db55c4915c841bd45a83e140f8624efa943aa8a52fe31774bd4d5"
+                        alt="grow-icon">
+                    <h3>Grow</h3>
+                    <p>Connect aspiring product managers iwth increadible companies.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h1>Let's Connect</h1>
+            <form class="form" id="form">
+                <div class="form-item" id="data-form">
+                    <label for="name" class="main-form">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                    <label for="email" class="main-form">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your email">
+                    <label for="city" class="main-form">City</label>
+                    <input type="text" name="city" id="city" placeholder="Your city">
+                    <label for="zip-code" class="main-form">Zip Code</label>
+                    <input type="number" name="zip-code" id="zip-code" placeholder="Your zip code">
+                    <div id="check-box">
+                        <input type="checkbox" id="status">
+                        <label id="check">
+                            Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai
+                        </label>
+                    </div>
+                    <button id="submit-form">Submit</button>
+                    <div id="warning"></div>
+                </div>
+                <div class="form-item">
+                    <img src="https://img.freepik.com/free-vector/new-team-members-concept-illustration_114360-7381.jpg?w=900&t=st=1687798215~exp=1687798815~hmac=6907000e2f7abb30ff12b1e099a837a284359914ecc8d3325a814ba22771a957" alt="connect-icon">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <small>Copyright © 2023 Trekt. All Rights Reserved.</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
