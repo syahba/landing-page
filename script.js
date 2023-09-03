@@ -1,11 +1,11 @@
-// form
+// Form
 const btnSubmit = document.getElementById('submit-form');
 btnSubmit.addEventListener('click', (event) => {
     event.preventDefault();
     submit()
 });
 
-// get form inputs
+// Fet Form Inputs
 function handleGetFormData() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -17,13 +17,13 @@ function handleGetFormData() {
     return data;
 };
 
-// validate zipcode number
+// Validate Zipcode Number
 function isNumber(data) {
     const validate = isNaN(data) ? false : true;
     return validate;
 };
 
-// validate checkbox
+// Validate Checkbox
 function checkboxIsChecked() {
     const status = document.getElementById('status').checked;
     if (status === true) {
@@ -31,19 +31,19 @@ function checkboxIsChecked() {
     } else { return false; }
 }
 
-// validate form
+// Validate Form
 function validateFormData(form) {
     if (form && isNumber(form.zipCode) && checkboxIsChecked()) {
         return true;
     } else { return false }
 }
 
-// form submission
+// Form Submission
 function submit() {
     const warning = document.getElementById('warning');
     const obj = handleGetFormData();
     if (validateFormData(obj)) {
         warning.innerHTML = '';
         alert('Thank you for contacting us!')
-    } else { warning.innerHTML = 'Periksa form anda sekali lagi'; }
+    } else { warning.innerHTML = 'Periksa form anda sekali lagi!'; }
 }

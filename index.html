@@ -4,101 +4,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Trekt.</title>
+    <title>HerStrength</title>
 </head>
 
 <body>
-    <header class="header">
+    <!-- Header Section -->
+    <header>
+        <!-- Navigation Bar -->
         <nav>
-            <a href="#">
-                <h1 id="logo">Trekt.</h1>
-            </a>
-
-            <!-- navigation -->
-            <div>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#home">Home</a></li>
-                    <li class="nav-item"><a href="#about">About Us</a></li>
-                    <li class="nav-item"><a href="#contact">Contact Us</a></li>
-                    <li class="nav-item"><a id="link" href="https://skilvul.com">Get Started</a></li>
-                </ul>
-            </div>
+            <h1 class="name-logo">HerStrength</h1>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#success">Inspiring Stories</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#toolkit">Toolkits</a></li>
+                <li><a href="#newsletter">Subscribe</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <!-- home landingpage -->
-        <div class="home" id="home">
-            <div class="heading">
-                <h1>Your roadmap to product management</h1>
-                <p>Trekt ist a product education platform. Trekt aims to empower individuals to become Product Managers.
-                </p>
-            </div>
-            <img id="banner"
-                src="https://img.freepik.com/free-vector/international-cooperation-concept-illustration_114360-6002.jpg?w=740&t=st=1687773316~exp=1687773916~hmac=7cd4c4511a5004580f7dae07eb9bfcea030f3cf1708b953d93815a49b71198df"
-                alt="people-vector">
-        </div>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <h1 class="name-logo">HerStrength</h1>
+            <p id="description">A website focused on boosting confidence and fostering empowerment among women.</p>
+            <a id="link" href="https://skilvul.com" class="cta-button button">Get Started</a>
+        </section>
 
-        <!-- about -->
-        <div id="about">
-            <p id="subheading">WHAT WE DO</p>
-            <h1>Our Offer</h1>
-            <p id="description">Our goal is to educate young professionals on the product management industry while also
-                providing users a way to practice their skills.</p>
+        <!-- Success Stories Section -->
+        <section id="success" class="section">
+            <h2>Champions of Change</h2>
+            <p>Discover the resilience, determination, and triumph of remarkable women who broke barriers and inspired
+                change. Whether you're seeking inspiration, insight, or simply a source of motivation, these narratives
+                will take you on a journey through the lives of trailblazers who've proven that empowerment knows no
+                boundaries.</p>
             <div class="card-container">
-                <div class="card-item" id="first-card">
-                    <img src="https://img.freepik.com/free-vector/webinar-concept-illustration_114360-4764.jpg?w=900&t=st=1687794173~exp=1687794773~hmac=5f3859a42a6242115aef6f519fe4b8e7fd944cc049f0c2c024361a2b0ed5f9dc"
-                        alt="graphic-icon">
-                    <h3>Learn</h3>
-                    <p>Learn the ins and outs of product management.</p>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Shinz%C5%8D_Abe_and_Malala_Yousafzai_%281%29_%28cropped%29.jpg/330px-Shinz%C5%8D_Abe_and_Malala_Yousafzai_%281%29_%28cropped%29.jpg"
+                            alt="Success Story 1">
+                    </div>
+                    <div class="card-details">
+                        <h3>Malala Yousafzai</h3>
+                        <p>A symbol of courage in the fight for girls' education.</p>
+                        <a href="https://en.wikipedia.org/wiki/Malala_Yousafzai" class="card-link">Read More</a>
+                    </div>
                 </div>
-                <div class="card-item" id="second-card">
-                    <img src="https://img.freepik.com/free-vector/lesson-concept-illustration_114360-7907.jpg?w=900&t=st=1687794136~exp=1687794736~hmac=699fc497bb0f601ff873c55576736e918679f737b661ec86ac985fa1d988a681"
-                        alt="note-icon">
-                    <h3>Pratice</h3>
-                    <p>We provide product management exercises so you can sharpen your skills.</p>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Michelle_Obama_2013_official_portrait.jpg/330px-Michelle_Obama_2013_official_portrait.jpg"
+                            alt="Success Story 1">
+                    </div>
+                    <div class="card-details">
+                        <h3>Michelle Obama</h3>
+                        <p>An advocate for education, health, and equality.</p>
+                        <a href="https://en.wikipedia.org/wiki/Michelle_Obama" class="card-link">Read More</a>
+                    </div>
                 </div>
-                <div class="card-item" id="third-card">
-                    <img src="https://img.freepik.com/free-vector/tech-company-concept-illustration_114360-9779.jpg?w=900&t=st=1687794222~exp=1687794822~hmac=a9f22906762db55c4915c841bd45a83e140f8624efa943aa8a52fe31774bd4d5"
-                        alt="grow-icon">
-                    <h3>Grow</h3>
-                    <p>Connect aspiring product managers iwth increadible companies.</p>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Greta_Thunberg_Climate_Change_Rally_In_Denver_Colorado_2019_%2849204099147%29_%28cropped%29.jpg/330px-Greta_Thunberg_Climate_Change_Rally_In_Denver_Colorado_2019_%2849204099147%29_%28cropped%29.jpg"
+                            alt="Success Story 1">
+                    </div>
+                    <div class="card-details">
+                        <h3>Greta Thunberg</h3>
+                        <p>The teenage climate activist who sparked a global movement.</p>
+                        <a href="https://en.wikipedia.org/wiki/Greta_Thunberg" class="card-link">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Angela_Merkel_2019_cropped.jpg/330px-Angela_Merkel_2019_cropped.jpg"
+                            alt="Success Story 1">
+                    </div>
+                    <div class="card-details">
+                        <h3>Angela Merkel</h3>
+                        <p>A visionary leader who shaped global politics.</p>
+                        <a href="https://en.wikipedia.org/wiki/Angela_Merkel" class="card-link">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- contact form -->
-        <div id="contact">
-            <h1>Let's Connect</h1>
-            <form class="form" id="form">
-                <div class="form-item" id="data-form">
-                    <label for="name" class="main-form">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Your name">
-                    <label for="email" class="main-form">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Your email">
-                    <label for="city" class="main-form">City</label>
-                    <input type="text" name="city" id="city" placeholder="Your city">
-                    <label for="zip-code" class="main-form">Zip Code</label>
-                    <input type="number" name="zip-code" id="zip-code" placeholder="Your zip code">
-                    <div id="check-box">
-                        <input type="checkbox" id="status">
-                        <label id="check">
-                            Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai
-                        </label>
+        <!-- Educational Resources Section -->
+        <section id="resources" class="section">
+            <h2>Boost Your Self-Confidence with Knowledge</h2>
+            <p>Unlock the vault of self-confidence with our curated selection of podcasts, articles, videos, movies, and
+                many more channels as they are a key to a more confident you.
+            </p>
+            <div class="platform-logos">
+                <a href="https://open.spotify.com/show/50GlQmQRw91HbV7khh97Q6" class="platform-logo">
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/750/original/spotify-app-logo-spotify-icon-transparent-free-png.png"
+                        alt="spotify-logo">
+                </a>
+                <a href="https://www.youtube.com/@ImprovementPill/videos" class="platform-logo">
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png"
+                        alt="youtube-logo">
+                </a>
+                <a href="https://blog.hubspot.com/marketing/confidence" class="platform-logo">
+                    <img src="https://static.vecteezy.com/system/resources/previews/024/555/044/non_2x/hubspot-logo-transparent-free-png.png"
+                        alt="hubspot-logo">
+                </a>
+                <a href="https://podcasts.apple.com/us/podcast/courageous-self-confidence/id1014867546"
+                    class="platform-logo" id="apple-logo">
+                    <img src="https://seeklogo.com/images/A/apple-podcast-logo-0CF661058F-seeklogo.com.png"
+                        alt="apple-logo">
+                </a>
+                <a href="https://www.netflix.com/title/60036164" class="platform-logo">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/101/069/original/netflix-logo-transparent-free-png.png"
+                        alt="netflix-logo">
+                </a>
+            </div>
+        </section>
+
+        <!-- Toolkits Section -->
+        <section id="toolkit" class="section">
+            <h2>Unleash Your Inner Confidence</h2>
+            <p>MDiscover empowering apps to boost your self-confidence and personal growth. Explore self-improvement
+                guides, daily affirmations, and more to become the confident, unstoppable woman you aspire to be.</p>
+            <div class="app-container">
+                <div class="app-box">
+                    <div class="app-logo">
+                        <img src="https://play-lh.googleusercontent.com/8C0787heF0mp8OI1wRWWGcHEmXJTLk0XuZcpDv4HxSN5Q52XShMuIG2kIxKSMIsBaI8" alt="thinkup">
                     </div>
-                    <button id="submit-form">Submit</button>
-                    <div id="warning"></div>
+                    <div class="app-details">
+                        <a href="https://play.google.com/store/apps/details?id=com.think.up&hl=en&gl=US" class="app-link">
+                            <h3>ThinkUp</h3>
+                            <p>ThinkUp helps you to cultivate a positive mindset and motivation through positive
+                                affirmations and self-talk to help you reach your full potential.</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="form-item">
-                    <img src="https://img.freepik.com/free-vector/new-team-members-concept-illustration_114360-7381.jpg?w=900&t=st=1687798215~exp=1687798815~hmac=6907000e2f7abb30ff12b1e099a837a284359914ecc8d3325a814ba22771a957" alt="connect-icon">
+                <div class="app-box">
+                    <div class="app-logo">
+                        <img src="https://play-lh.googleusercontent.com/6fJkwLNConwwY7Oq80FRvU6PwYkqZ0FtyKMiyhuV57VQFwGWO66yi0s08zjjJodlAqQ" alt="build-confidence">
+                    </div>
+                    <div class="app-details">
+                        <a href="https://play.google.com/store/apps/details?id=com.hivebrain.andrewjohnson.confidence&hl=en&gl=US" class="app-link">
+                            <h3>Build Confidence with AJ</h3>
+                            <p>Build Confidence is useful for building inner strength and stress resilience, developing a
+                                healthy lifestyle, and practicing positive thinking.</p>
+                        </a>
+                    </div>
                 </div>
+                <div class="app-box">
+                    <div class="app-logo">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/8f/ab/97/8fab970c-fa5e-10d0-4aaa-ec81f1ee6fc7/AppIcon-1-0-0-1x_U007emarketing-0-0-0-4-85-220.png/1200x630wa.png" alt="confidence-motivation">
+                    </div>
+                    <div class="app-details">
+                        <a href="https://play.google.com/store/apps/details?id=com.oncebyten.pmkconfident&hl=en&gl=US" class="app-link">
+                            <h3>Confidence Motivation Hypnosis</h3>
+                            <p>Confidence Motivation Hypnosis helps you overcome poor self-esteem, limiting beliefs, and
+                                negative self-talk.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="app-box">
+                    <div class="app-logo">
+                        <img src="https://play-lh.googleusercontent.com/YDgrrR3MJJqsiXjBLgpmhkP31DfuXuYjt2VMWTKwD8ctdXpgGZZzMAccjfTiogK-IBDP=w240-h480-rw" alt="happier">
+                    </div>
+                    <div class="app-details">
+                        <a href="https://play.google.com/store/apps/details?id=com.thehappierapp&hl=en&gl=US" class="app-link">
+                            <h3>Happier</h3>
+                            <p>Happier is home to courses and tools that help people become happier, healthier, and more
+                                productive and creative.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="app-box">
+                    <div class="app-logo">
+                        <img src="https://www.stress.org.uk/wp-content/uploads/2021/02/headspace-app-logo-fitted-900x754-1.jpg" alt="headspace">
+                    </div>
+                    <div class="app-details">
+                        <a href="https://play.google.com/store/apps/details?id=com.getsomeheadspace.android&hl=en&gl=US" class="app-link">
+                            <h3>Headspace</h3>
+                            <p>Headspace helps you to start a daily meditation habit, ease stress and build stress
+                                resilience, create the conditions for restful sleep, focus, and find motivation for mindful
+                                movement.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="app-box">
+                    <div class="app-logo">
+                        <img src="https://uploads-ssl.webflow.com/5b0c471ddb589cf22d4477a4/5b129a9a804c1fab88d57bfb_shine-app-icon-3.png" alt="shine">
+                    </div>
+                    <div class="app-details">
+                        <a href="https://www.theshineapp.com/" class="app-link">
+                            <h3>Shine</h3>
+                            <p>Shine is a results-driven self-care app that uses text messages to encourage and motivate
+                                users regularly. The app also lets you keep notes and build a self-esteem toolbox for
+                                yourself.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section id="newsletter" class="section">
+            <h2>Stay Empowered - Subscribe Now</h2>
+            <p>Don't miss out on empowering content and updates. Subscribe to our newsletter and receive regular
+                confidence-boosting tips, success stories, and news about upcoming events in your inbox.</p>
+            <form>
+                <label for="name" class="main-form">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="city" class="main-form">City</label>
+                <input type="text" name="city" id="city">
+                <label for="email" class="main-form">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="zip-code" class="main-form">Zip Code</label>
+                <input type="number" name="zip-code" id="zip-code">
+                <input type="checkbox" id="status">
+                <label for="status" id="check">
+                    Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai
+                </label>
+                <button type="submit" id="submit-form" class="submit">Submit</button>
+                <div id="warning" class="warning-text"></div>
             </form>
-        </div>
+        </section>
     </main>
 
-    <footer>
-        <small>Copyright © 2023 Trekt. All Rights Reserved.</small>
+    <footer id="contact" class="footer">
+        <h3>Contact Us</h3>
+        <small>If you have any questions or inquiries, please don't hesitate to reach out to us at
+            <a href="mailto:herstrength@example.com">herstrength@example.com</a>.
+        </small>
     </footer>
 
     <script src="script.js"></script>
