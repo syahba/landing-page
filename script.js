@@ -2,7 +2,7 @@
 const btnSubmit = document.getElementById('submit-form');
 btnSubmit.addEventListener('click', (event) => {
     event.preventDefault();
-    submit()
+    submit();
 });
 
 // Fet Form Inputs
